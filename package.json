@@ -1,0 +1,35 @@
+{
+    "name": "cssSuggestions",
+    "displayName": "CSS Property and Value Suggestions",
+    "description": "Suggestions for CSS properties and values.",
+    "version": "0.0.1",
+    "publisher": "kungfoowiz",
+    "icon": "icons8-css3-filled-128.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Kungfoowiz/cssSuggestionsVSCode.git"
+    },
+    "engines": {
+        "vscode": "^1.28.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "*"
+    ],
+    "main": "./out/extension",
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.21",
+        "@types/node": "^8.10.25",
+        "@types/mocha": "^2.2.42"
+    }
+}
