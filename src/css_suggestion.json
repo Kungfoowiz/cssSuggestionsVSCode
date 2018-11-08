@@ -606,7 +606,10 @@
         [{
         "color": {
             "values": [
-                "inherit"
+                "inherit",
+                "#ffffff",
+                "rgb(255, 255, 255)",
+                "rgba(255, 255, 255, 0.5);"
             ],
             "type": "color",
             "description": "Sets the foreground color value of an element's text content and text decorations."
@@ -833,7 +836,9 @@
         [{
             "border":{
                 "values":[
-                  "3px solid #ff0000;"  
+                  "1px solid #ffffff;",
+                  "1px solid rgb(255, 255, 255);",
+                  "1px solid rgba(255, 255, 255, 0.5);"
                 ], 
             "description": "A shorthand property that sets the line width, line style and colour for all four sides of an element's border."
         }}],

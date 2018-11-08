@@ -1,12 +1,16 @@
-import {
-    Disposable, ExtensionContext, TextDocument,
-    languages, Position, CompletionItem,
-    CompletionItemKind
+import { 
+    Disposable, ExtensionContext, TextDocument, 
+    languages, Position, CompletionItem, 
+    CompletionItemKind, Range
 } from 'vscode';
 
 export function activate(context: ExtensionContext) {
-
     const COMPLETION_TRIGGER = ":";
+    const SUPPORTED_CSS = [
+        // "*"
+        "css", "scss", 
+    ];
+
     const cssSuggestions = require('../src/css_suggestion.json');
 
     let completion = new Completion(cssSuggestions);
@@ -15,20 +19,26 @@ export function activate(context: ExtensionContext) {
     context.subscriptions.push(completion);
     context.subscriptions.push(completionController);
 
-    context.subscriptions.push(languages.registerCompletionItemProvider("*", {
-        provideCompletionItems: (document, position, token) => {
-            return completion.performCompletion(document, position);
-        }, resolveCompletionItem: (item, token) => item
-    }, COMPLETION_TRIGGER));
+    for (var support of SUPPORTED_CSS) {
+
+        context.subscriptions.push(languages.registerCompletionItemProvider(support, {
+            provideCompletionItems: (document, position, token) => {
+                return completion.performCompletion(document, position);
+            }, resolveCompletionItem: (item, token) => {
+                return item;
+            }
+        }, COMPLETION_TRIGGER));
+
+    }
 
 }
 
 class Completion {
-
     private cssSuggestions: any;
 
-    constructor(cssSuggestions: any) {
+    public matchPropertyValue: string;
 
+    constructor(cssSuggestions: any) {
         this.cssSuggestions = cssSuggestions;
     }
 
@@ -36,19 +46,24 @@ class Completion {
 
         var result = [];
         var lineText = document.lineAt(position.line).text.trim();
-        var matchPropertyValue = lineText.replace(/:/g, "");
-
-        if (matchPropertyValue !== "") {
+        this.matchPropertyValue = lineText.replace(/:/g, "");
+        
+        if (this.matchPropertyValue !== "") {
 
             for (var key in this.cssSuggestions.properties) {
 
                 var obj = Object.keys(this.cssSuggestions.properties[key][0]);
-                var targetValue = matchPropertyValue;
+                var targetValue = this.matchPropertyValue;
 
                 if (obj[0] === targetValue) {
 
                     for (var valueIndex in this.cssSuggestions.properties[key][0][targetValue].values) {
-                        result.push(new CompletionItem(" " + this.cssSuggestions.properties[key][0][targetValue].values[valueIndex], CompletionItemKind.Value));
+                        
+                        var newValue = this.cssSuggestions.properties[key][0][targetValue].values[valueIndex];
+                        
+                        var newItem = new CompletionItem(" " + newValue, CompletionItemKind.Value);
+                        
+                        result.push(newItem);
                     }
                 }
             }
@@ -60,10 +75,20 @@ class Completion {
             for (var key in this.cssSuggestions.properties) {
 
                 var obj = Object.keys(this.cssSuggestions.properties[key][0]);
-                var targetValue = matchPropertyValue;
+                var propertyName = obj[0].toString();
 
-                result.push(new CompletionItem(obj[0], CompletionItemKind.Field));
+                var newItem = new CompletionItem(propertyName, CompletionItemKind.Field);
+                var newRange = new Range(position.translate(0, -1), position);
+
+
+                // Unfortunately this interferes with suggestions.
+                newItem.filterText = ":";
+                newItem.insertText = propertyName;
+                newItem.range = newRange;
+
+                result.push(newItem);
             }
+        
         }
 
         return result;
@@ -72,12 +97,9 @@ class Completion {
     dispose() {
 
     }
-
-
 }
 
 class CompletionController {
-
     private completion: Completion;
 
     private disposable: Disposable;
@@ -94,5 +116,4 @@ class CompletionController {
         this.completion.dispose();
         this.disposable.dispose();
     }
-
 }

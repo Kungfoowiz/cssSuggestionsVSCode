@@ -4,7 +4,7 @@
     "description": "Suggestions for CSS properties and values.",
     "version": "0.0.1",
     "publisher": "kungfoowiz",
-    "icon": "icons8-css3-filled-128.png",
+    "icon": "cssSuggestionsICO.ico",
     "repository": {
         "type": "git",
         "url": "https://github.com/Kungfoowiz/cssSuggestionsVSCode.git"
@@ -31,5 +31,6 @@
         "vscode": "^1.1.21",
         "@types/node": "^8.10.25",
         "@types/mocha": "^2.2.42"
-    }
+    },
+    "dependencies": {}
 }

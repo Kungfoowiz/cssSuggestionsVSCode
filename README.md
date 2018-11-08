@@ -4,17 +4,25 @@ CSS suggestions for Properties and Values.
 
 ## Features
 
-In the text editor, press the ':' (colon) key to access a CSS property.
+Main features of the extension:
 
-Once a property is typed, i.e. border, press ':' key again to access its values.
+Press colon ‘:’ to get CSS properties, scroll and click desired property.
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+After typing a property, press colon ‘:’ to get available CSS values.
 
-For example if there is an image subfolder under your extension project workspace:
+Hover the colour property to get VS Code’s integrated colour picker.
+
+Made this to get similar functionality that we get in Visual Studio Pro/Community edition.
+
+\!\[Colon to activate CSS Suggestions\]\(cssSuggestionsUsage.gif\)
+
+<!-- Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+
+For example if there is an image subfolder under your extension project workspace: 
 
 \!\[feature X\]\(images/feature-x.png\)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+ > Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
 
 ## Requirements
 
@@ -31,27 +39,27 @@ This extension contributes the following settings:
 * `myExtension.enable`: enable/disable this extension
 * `myExtension.thing`: set to `blah` to do something
 
+-->
+
+## Feedback
+
+1. Please provide feedback to improve this extension.
+
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+1. Property suggestions can't be filtered by typing, only value suggestions can be filtered.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+### 0.0.1
+
+Initial beta.
 
 ### 1.0.0
 
-Initial release of ...
+Cleaned up code; Added property suggestions.
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
+<!-- -----------------------------------------------------------------------------------------------------------
 
 ## Working with Markdown
 
@@ -66,4 +74,4 @@ Added features X, Y, and Z.
 * [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
 * [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
 
-**Enjoy!**
+**Enjoy!** -->
