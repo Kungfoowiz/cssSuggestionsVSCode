@@ -55,6 +55,10 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.8
+
+Fixed icon to be 128px.
+
 ### 1.0.7
 
 Updated readme.

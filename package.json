@@ -2,9 +2,9 @@
     "name": "cssSuggestions",
     "displayName": "CSS Suggestions",
     "description": "Suggestions for CSS properties and values.",
-    "version": "1.0.7",
+    "version": "1.0.8",
     "publisher": "kungfoowiz",
-    "icon": "cssSuggestionsICO.ico",
+    "icon": "cssSuggestions.ico",
     "repository": {
         "type": "git",
         "url": "https://github.com/Kungfoowiz/cssSuggestionsVSCode.git"
