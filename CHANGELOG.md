@@ -3,6 +3,9 @@ All notable changes to the "cssSuggestionsVSCode" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.3] - 2018-11-08
+- Fixed animation link in readme.
+
 ## [1.0.2] - 2018-11-08
 - Changed extension name.
 

@@ -14,7 +14,7 @@ Hover the colour property to get VS Code’s integrated colour picker.
 
 Made this to get similar functionality that we get in Visual Studio Pro/Community edition.
 
-\!\[Colon to activate CSS Suggestions\]\(cssSuggestionsUsage.gif\)
+\!\[Colon to activate CSS Suggestions\]\(https://media.giphy.com/media/9MIzfSvcOzs0sAuHDg/giphy.gif\)
 
 <!-- Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
@@ -50,6 +50,10 @@ This extension contributes the following settings:
 1. Property suggestions can't be filtered by typing, only value suggestions can be filtered.
 
 ## Release Notes
+
+### 1.0.3
+
+Fixed animation link in readme.
 
 ### 1.0.2
 
