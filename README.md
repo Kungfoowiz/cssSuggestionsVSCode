@@ -1,8 +1,10 @@
-# cssSuggestions README
+# [CSS Suggestions](https://marketplace.visualstudio.com/items?itemName=kungfoowiz.cssSuggestions#overview)
 
 CSS suggestions for Properties and Values.
 
 Always remember kids, be kind to the Pusheen =)
+
+[GitHub repository](https://github.com/Kungfoowiz/cssSuggestionsVSCode)
 
 ## Features
 
@@ -52,6 +54,10 @@ This extension contributes the following settings:
 1. Property suggestions can't be filtered by typing, only value suggestions can be filtered.
 
 ## Release Notes
+
+### 1.0.5
+
+Fixed readme.
 
 ### 1.0.4
 

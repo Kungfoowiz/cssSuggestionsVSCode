@@ -3,6 +3,9 @@ All notable changes to the "cssSuggestionsVSCode" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.5] - 2018-11-08
+- Fixed readme.
+
 ## [1.0.4] - 2018-11-08
 - Fixing readme.
 
