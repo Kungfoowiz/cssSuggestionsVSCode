@@ -51,6 +51,10 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.2
+
+Changed extension name.
+
 ### 1.0.1
 
 Fixed icon.
