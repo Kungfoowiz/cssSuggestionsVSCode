@@ -1,6 +1,10 @@
 # [CSS Suggestions](https://marketplace.visualstudio.com/items?itemName=kungfoowiz.cssSuggestions#overview)
 
-CSS suggestions for Properties and Values.
+Made this to get similar functionality that we get in Visual Studio Pro/Community edition.
+
+Pressing colon activates CSS suggestions for properties and values in CSS/SCSS files.
+
+I will try keep developing this based on my own use and from any feedback.
 
 Always remember kids, be kind to the Pusheen =)
 
@@ -8,15 +12,11 @@ Always remember kids, be kind to the Pusheen =)
 
 ## Features
 
-Main features of the extension:
+1. Press colon ‘:’ to get CSS properties, scroll and click desired property.
 
-Press colon ‘:’ to get CSS properties, scroll and click desired property.
-
-After typing a property, press colon ‘:’ to get available CSS values.
+2. After typing a property, press colon ‘:’ to get available CSS values.
 
 Hover the colour property to get VS Code’s integrated colour picker.
-
-Made this to get similar functionality that we get in Visual Studio Pro/Community edition.
 
 ![Colon to activate CSS Suggestions](https://media.giphy.com/media/9MIzfSvcOzs0sAuHDg/giphy.gif)
 
@@ -54,6 +54,10 @@ This extension contributes the following settings:
 1. Property suggestions can't be filtered by typing, only value suggestions can be filtered.
 
 ## Release Notes
+
+### 1.0.7
+
+Updated readme.
 
 ### 1.0.6
 
