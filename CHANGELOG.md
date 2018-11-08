@@ -3,6 +3,9 @@ All notable changes to the "cssSuggestionsVSCode" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.6] - 2018-11-08
+- Removed unneeded gif.
+
 ## [1.0.5] - 2018-11-08
 - Fixed readme.
 

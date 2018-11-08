@@ -55,6 +55,10 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+### 1.0.6
+
+Removed unneeded gif.
+
 ### 1.0.5
 
 Fixed readme.
