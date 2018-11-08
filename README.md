@@ -51,13 +51,17 @@ This extension contributes the following settings:
 
 ## Release Notes
 
-### 0.0.1
+### 1.0.1
 
-Initial beta.
+Fixed icon.
 
 ### 1.0.0
 
 Cleaned up code; Added property suggestions.
+
+### 0.0.1
+
+Initial beta.
 
 <!-- -----------------------------------------------------------------------------------------------------------
 
