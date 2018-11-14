@@ -10,8 +10,7 @@ export function activate(context: ExtensionContext) {
         // "*"
         "css", "scss", 
     ];
-
-    // const cssSuggestions = require('../src/css_suggestion.json');
+    
     const cssSuggestions = require('../css_suggestion.json');
 
     let completion = new Completion(cssSuggestions);
@@ -62,7 +61,7 @@ class Completion {
                         
                         var newValue = this.cssSuggestions.properties[key][0][targetValue].values[valueIndex];
                         
-                        var newItem = new CompletionItem(" " + newValue, CompletionItemKind.Value);
+                        var newItem = new CompletionItem(" " + newValue + ";", CompletionItemKind.Value);
                         
                         result.push(newItem);
                     }

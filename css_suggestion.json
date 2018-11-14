@@ -609,7 +609,7 @@
                 "inherit",
                 "#ffffff",
                 "rgb(255, 255, 255)",
-                "rgba(255, 255, 255, 0.5);"
+                "rgba(255, 255, 255, 0.5)"
             ],
             "type": "color",
             "description": "Sets the foreground color value of an element's text content and text decorations."
