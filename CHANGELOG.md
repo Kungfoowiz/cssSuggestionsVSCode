@@ -3,6 +3,10 @@ All notable changes to the "cssSuggestionsVSCode" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [1.0.9] - 2018-11-14
+- New icon.
+- Fixed missing json file.
+
 ## [1.0.8] - 2018-11-08
 - Fixed icon to be 128px.
 

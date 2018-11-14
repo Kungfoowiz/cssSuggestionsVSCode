@@ -55,6 +55,11 @@ This extension contributes the following settings:
 
 ## Release Notes
 
+## 1.0.9
+
+New icon.
+Fixed missing json file.
+
 ### 1.0.8
 
 Fixed icon to be 128px.
