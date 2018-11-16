@@ -383,7 +383,12 @@
         [{
         "background-color": {
             "values": [
-                "inherit"
+                "inherit",
+                "#c5d32c",
+                "rgb(13, 162, 188)",
+                "rgba(249, 178, 92, 0.5)",
+                "hsl(50, 0%, 75%)",
+                "hsla(50, 0%, 50%, 0.5)"
             ],
             "type": "color",
             "description": "Sets the background color of an element, using either a color value or the keyword transparent."
@@ -417,12 +422,19 @@
         [{
         "background-image": {
             "values": [
-                "image()",
-                "linear-gradient()",
-                "radial-gradient()",
-                "repeating-linear-gradient()",
-                "repeating-radial-gradient()",
-                "url()"
+                "url(\"x.png\")",
+                "linear-gradient(rgb(186, 177, 63), rgba(77, 10, 240, 0.5))",
+                "linear-gradient(rgb(157, 189, 242) 13%, rgb(95, 175, 159) 42%, rgb(219, 221, 70) 71%)",
+                "linear-gradient(to top right, rgba(13, 162, 188, 0.77), #c5d32c)",
+                "linear-gradient(135deg, rgba(13, 162, 188, 0.77), #c5d32c)",
+                "repeating-linear-gradient(135deg, rgb(160, 235, 239, 0.65), #c5d32c 62px)",
+                "radial-gradient(rgba(249, 178, 92, 0.91), #f95ca6)",
+                "radial-gradient(circle, rgba(249, 178, 92, 0.91), #f95ca6)",
+                "radial-gradient(circle at top left, rgba(249, 178, 92, 0.91), #f95ca6)",
+                "radial-gradient(circle at top left, rgba(249, 178, 92, 0.91) 10%, #f95ca6 53%, rgba(101, 118, 155, 0.45))",
+                "repeating-radial-gradient(rgba(249, 178, 92, 0.91), rgba(101, 118, 155, 0.45) 12%)",
+                "repeating-radial-gradient(closest-side, #f95ca6, rgba(249, 178, 92, 0.91), rgba(101, 118, 155, 0.45))",
+                "repeating-radial-gradient(circle at 100%, #f95ca6, rgba(249, 178, 92, 0.91) 10px, rgba(101, 118, 155, 0.45) 10px, rgba(101, 118, 155, 0.45) 20px)"
             ],
             "description": "Sets one or more background images on an element."
         }}],
@@ -607,9 +619,11 @@
         "color": {
             "values": [
                 "inherit",
-                "#ffffff",
-                "rgb(255, 255, 255)",
-                "rgba(255, 255, 255, 0.5)"
+                "#c5d32c",
+                "rgb(13, 162, 188)",
+                "rgba(249, 178, 92, 0.5)",
+                "hsl(50, 0%, 75%)",
+                "hsla(50, 0%, 50%, 0.5)"
             ],
             "type": "color",
             "description": "Sets the foreground color value of an element's text content and text decorations."

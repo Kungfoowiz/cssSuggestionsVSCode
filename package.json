@@ -2,7 +2,7 @@
     "name": "cssSuggestions",
     "displayName": "CSS Suggestions",
     "description": "Suggestions for CSS properties and values.",
-    "version": "1.0.10",
+    "version": "1.0.11",
     "publisher": "kungfoowiz",
     "icon": "cssSuggestions.ico",
     "repository": {

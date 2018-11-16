@@ -55,11 +55,15 @@ This extension contributes the following settings:
 
 ## Release Notes
 
-## 1.0.10
+### 1.0.11
+
+Added background-color, background-image, color values.
+
+### 1.0.10
 
 Added semi colons automatically for css values.
 
-## 1.0.9
+### 1.0.9
 
 New icon; Fixed missing json file.
 
